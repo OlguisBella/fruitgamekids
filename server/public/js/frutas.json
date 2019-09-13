@@ -1,0 +1,13 @@
+{
+  "costa": [  
+    {"nombre":"durazno.png", "id":"durazno"},
+    {"nombre":"mandarina.png", "id":"mandarina"},
+    {"nombre":"sandia.png", "id":"sandia" }   
+  ], 
+
+  "sierra": [ 
+  {"nombre":"manzana.png","id":"manzana"},
+  {"nombre":"cereza.png", "id":"cereza"},
+  {"nombre":"uva.png", "id":"uva"}  ]  
+}
+

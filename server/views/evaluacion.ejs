@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html class="no-js">
+  <head>
+    <% include partials/head %>
+  </head>
+
+<body>
+  <!--Logo-->
+  <header>
+    <!-- Cabecera del sitio: Menú del juego-->
+    <nav class="navbar navbar-default">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <a href="/"><img class="img-fluid" id="logo" src="../images/BOTONES/logo.png" alt="Logo"> </a>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- <audio src="../audio/intro.mp3" autoplay type="audio/mpeg"></audio> -->
+  <audio src="../audio/introPreguntas.mp3" autoplay type="audio/mpeg"></audio>
+
+  <!-- Pop up para puntaje-->
+  <div id="popwinner" class="mpopup">
+    <div class="mpopup-content">
+      <div class="mpopup-head">
+        <a href="#" class="close">×</a>
+        <h2 class="text-center">¡Muy bien!</h2>
+      </div>
+      <center>
+        <h5 id="conPuntaje"></h5>
+        <img class="img-fluid fondoPop" src="../images/OBJETOS/felicidades.png">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 mx-auto">
+              <a href="/"><img class="img-fluid" src="../images/BOTONES/INICIAR3.png"></a>
+            </div>
+          </div>
+        </div>
+      </center>
+    </div>
+  </div>
+
+  <!-- Pop up para instrucciones2-->
+  <div id="instruc2mpopupBox" class="mpopup">
+    <div class="mpopup-contentInstruccion">
+      <div class="mpopup-head">
+        <a href="#" class="close">x</a>
+        <h2>Instrucciones</h2>
+      </div>
+      <ul id="tabs">
+        <li><a href="#tab1">1</a></li>
+        <li><a href="#tab2">2</a></li>
+      </ul>
+
+      <div id="content" style="height:154px;">
+        <br>
+        <br>
+        <center>
+          <div id="tab1"><b>Seleccione todas las frutas una a una</b></div><br>
+          <div id="tab2"><b>Escuche y lea la información de cada fruta</b></div>
+        </center>
+      </div>     
+    </div>
+  </div>
+
+  <div id="juego">
+
+    <center>
+      <section id="despedida">
+        <img class="img-fluid center-block" src="../images/OBJETOS/despedida.png">
+      </section>
+    </center>
+  </div>
+  <% include partials/scripts %>        
+</body>
+
+</html>

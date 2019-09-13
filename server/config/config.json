@@ -1,0 +1,26 @@
+{
+  "development": {
+    "username": "postgres",
+    "password": "pgadmin4",
+    "database": "appfruitgame",
+    "host": "127.0.0.1",
+    "dialect": "postgres"      
+  },
+
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "database_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"    
+  },
+  
+  "production": {
+    "username": "orlyfeuxmeznky",
+    "password": "dca2ff64a9c88d3238a5b1da6a9236017225d72b977eb88f51f0714f1a449fa6",
+    "database": "db53in4l8mp7ki",
+    "host": "ec2-23-21-115-109.compute-1.amazonaws.com",
+    "dialect": "postgres",
+    "operatorsAliases": false
+  }
+}

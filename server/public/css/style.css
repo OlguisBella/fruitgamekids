@@ -1,0 +1,492 @@
+
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Patrick+Hand');
+
+body {
+  background: url('../images/OBJETOS/fondo.png') center center fixed;
+  background-size: 100% 100%;    
+}
+
+/* seccion popup */
+
+.mpopup {
+  padding-top: 100px;
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width:100%;
+  height:100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+.mpopup-content {
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width:25%;
+  height:auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+.mpopup-contentInstruccion{
+  position: relative;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 0;
+  width:50%;
+  height:auto;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+  -webkit-animation-name: animatetop;
+  -webkit-animation-duration: 0.4s;
+  animation-name: animatetop;
+  animation-duration: 0.4s
+}
+
+
+.mpopup-head {
+padding:20px 8px;
+background-color: rgb(0, 214, 199);
+color: white;
+font-family: 'Muli', sans-serif;
+font-weight:600px;
+text-align: center;  
+letter-spacing: .3px;
+font-size:25px;
+}
+
+
+.mpopup-foot {
+  padding: 2px 8px;
+  background-color: #ff0000;
+  color: #ffffff;
+}
+
+
+#imgFondoGanador{
+ width: 50%;
+}
+
+#popUpGanador{
+  position: relative;
+  top:5em;
+  margin: auto;
+}
+
+#setting{
+  width: 3em;
+  height: 3em; 
+}
+
+.image-fade {
+  -webkit-transform:rotate(360deg);
+  -webkit-transition-duration: 3s;
+}
+
+.imgN2{
+  width:10em;
+  height:10em;
+}
+
+#tabs {overflow: hidden;width: 100%;margin: 0;padding: 0;list-style: none;font:18px Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif}
+#tabs li {float: left;margin: 0 .5em 0 0;}
+#tabs a {position: relative;background: #aaaaaa;padding: 0.7em 3em;float: left;	text-decoration: none;color: #fff;font-size: 15px;font-weight: bold;}
+#tabs a:hover, #tabs a:hover::after, #tabs a:focus, #tabs a:focus::after {background: #aaaaaa;color: #000;}
+#tabs a:focus {outline: 0;}
+#tabs a::after {content: '';position: absolute;	z-index: 1;top: 0;right: -.5em;	bottom: 0;	width: 1em;background: #aaaaaa;}
+#tabs #current a {background: #399ecd;	z-index: 3;color: #fff;}
+#tabs #current a::after {background: #399ecd;z-index: 3;color: #fff;}
+#content {background: #fff;	padding: 0px;position: relative;z-index: 2;}
+
+#tab1{  
+  font-size:30px;
+  background: url('../images/OBJETOS/fondoInstr1.png') center center;  
+  background-size:cover; 
+  opacity:0.8;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+#divform {
+  border-radius: 5px;
+  padding: 20px;
+}
+
+#game-page-title {
+  margin-top: 0px;
+  margin-bottom: 10px;
+  margin:1em;
+  font-family: 'Muli', sans-serif;
+  font-weight:600px;
+  text-align: center;
+  color: #e67e21;
+  letter-spacing: .3px;
+  font-size:50px;
+  font-family: 'Patrick Hand', bold;
+  position: relative;
+  top:1em;
+  }
+
+#seccionAdminFruta{
+  height:auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#tab2{    
+  font-size:30px;
+  background: url('../images/OBJETOS/fondoInstr1.png') center center;  
+  background-size:cover; 
+  opacity:0.8;
+}
+
+#colgante{  
+  display:none;
+  width:30em;
+  height:30em;
+ }
+
+ #canasta{
+  position: relative;
+  top:4em;
+  display:none;
+  width:20em;
+  height:20em;
+ }
+ 
+ #canastaV{
+  position: relative;
+  top:4em;
+  float: left;
+  width:20em;
+  height:20em;
+  margin:10px;
+  padding:10px;
+ } 
+ 
+ #div1{
+  position:relative;
+  top:4em;
+  float: left;
+  width: 300px;
+  height:200px;
+  margin: 10px;
+  padding: 10px;
+  border: 1px solid black;
+}
+
+  .target{
+
+  width:100px; height:100px; background:red;
+ }
+
+ #div_login {
+  border: 1px solid gray;
+  border-radius: 3px;
+  width: 470px;
+  height: 270px;
+  box-shadow: 0px 2px 2px 0px gray;
+  margin: 0 auto;
+}
+
+#div_login h1 {
+  margin-top: 0px;
+  font-weight: normal;
+  padding: 10px;
+  background-color: cornflowerblue;
+  color: white;
+  font-family: sans-serif;
+}
+
+#div_login div {
+  clear: both;
+  margin-top: 10px;
+  padding: 5px;
+}
+#message {
+  width: 100%;
+  text-align: center;
+  color: red;
+}
+
+#div_login .textbox {
+  width: 96%;
+  padding: 7px;
+}
+
+
+
+#btnEvaluar{
+display:none;
+position: relative;
+top:10em;
+}
+
+#despedida{
+  display:none;
+  width:50%;
+  height:50%;
+}
+
+
+#containerFrutas{
+  position: relative;
+  top:4em; 
+  }
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+ font-family: 'Indie Flower', cursive;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: 400;
+  font-family: 'Indie Flower', cursive;
+}
+
+h3 {
+  font-size: 28px;
+  font-weight: 300;
+}
+p {
+  font-size: 15px;
+  line-height: 28px;
+}
+ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+a,
+a:active,
+a:focus,
+a:active {
+  text-decoration: none !important;
+}
+
+/*--	Header --*/
+
+ #logo{
+    width: 210px;
+    height: 60px;
+    }   
+
+#btnIniciar{
+position: relative;
+top:3em;
+display:block;
+}
+
+#cerrar{
+  width:2em;
+  height:1.7em;
+  z-index:50; 
+}
+
+#btnEva{
+position:relative;
+top:-15em;
+width:9em;
+height:4.3em;
+display:block;
+}
+
+#btnJugar{
+  position: relative;
+  top:-10em;
+  width:8em;
+  height:6em;
+  display:block;
+  }  
+     
+
+#tituloIntro{
+width:500px;
+height:100px;
+}
+
+#tituloAprendizaje{
+position: relative;
+top:3em;
+width:500px;
+height:100px;
+}
+
+#seccionIntro {
+  position: relative;
+  top:8em;
+  height:auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#seccionNivel1{
+  display:none;
+  height:auto; 
+}
+
+#seccionNivel2{
+  display:none;
+  height:auto;
+}
+
+#seccionAprendizaje{
+  display:none;
+  height:auto;
+}
+
+#seccionEvaluacion{
+  position: relative;
+  top:2em;  
+  width: auto;
+  height: auto;
+}
+
+
+#seccionEvaluacion2{
+  display:none;
+  position: relative;
+  top:2em;  
+  width: auto;
+  height: auto;
+}
+
+.seccionPreguntas{
+  width:20em;
+}
+
+#containerFrutasCosta {
+  /* background: url('../images/OBJETOS/fondoFrutasS.jpg') center center fixed;
+  background-size: 100% 100%;   */ 
+  position: relative;
+  top:3em; 
+}
+
+#containerFrutasSierra {
+  /* background: url('../images/OBJETOS/fondoFrutasS.jpg') center center fixed;
+  background-size: 100% 100%;   */ 
+  position: relative;
+  top:3em; 
+}
+
+#animarImgSandia{
+  width:10em;
+  height:10em;
+}
+
+.espacioPreg{
+  position: relative;
+  top:-0.3em;
+}
+
+#seccionPreg1{  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  
+  }
+
+#seccionPreg2{
+display:none;
+height:auto;
+background-position: center;
+background-repeat: no-repeat;
+background-size: cover;
+}
+
+#seccionPreg3{
+  display:none;
+  height:auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+
+.seccionPregOculta{
+  display:none;
+  height:auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+
+#seccionPreg11{  
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;  
+}
+
+#rotEva{  
+  width:500px;
+  height:100px; 
+}
+
+#rotPuntaje{
+  width:200px;
+  height:75px; 
+}
+
+#imgJuego{  
+  width:75%;
+  height:85%;
+}
+
+#imgJuegoInicio{
+  width:75%;
+  height:50%;
+}
+#btnSiguientePregunta{
+  position: relative;
+  top:3em;
+  width:8em;
+  height:6em;
+  display:block; 
+  } 
+
+  #btnSiguienteNivel{
+    display:none;
+    position: relative;
+    top:3em;
+    width:8em;
+    height:6em;    
+    } 
+  
+
+ 
+ 
